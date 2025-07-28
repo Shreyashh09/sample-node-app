@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Running tests... No actual tests implemented.\" && exit 0"
+    "test": "echo \"Running tests... No actual tests implemented.\" && exit 0",
+    "build": "echo \"No build step required.\""
   },
   "author": "",
   "license": "ISC"
