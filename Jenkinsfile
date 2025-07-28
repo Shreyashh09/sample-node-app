@@ -2,17 +2,11 @@
 pipeline {
     agent any // Or specify a Docker agent if you have one configured
 
-    tools {
-        // Define Node.js tool (configured in Jenkins Global Tool Configuration)
-        nodejs 'node-24' // Replace 'node-18' with the name you configure in Jenkins
-    }
-
     stages {
         stage('Checkout') {
             steps {
                 // Checkout the source code from SCM (e.g., Git)
-                sh 'git config remote.origin.url https://github.com/Shreyashh09/sample-node-app'
-                git branch: 'main', url: 'https://github.com/Shreyashh09/sample-node-app' // Replace with your actual path or remote Git URL
+                git branch: 'main', url: 'https://github.com/Shreyashh09/sample-node-app.git' // Replace with your actual path or remote Git URL
             }
         }
 
