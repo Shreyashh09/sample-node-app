@@ -5,8 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout the source code from SCM (e.g., Git)
-                git branch: 'main', url: 'https://github.com/Shreyashh09/sample-node-app.git' // Replace with your actual path or remote Git URL
+                echo 'Code already checked out by Jenkins.'
             }
         }
 
